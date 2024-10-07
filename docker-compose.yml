@@ -1,8 +1,8 @@
-version: '3.8'
+version: "3.8"
 
 services:
     # Web Server Service
-    nginx_learn_en:
+    nginx_sample:
         image: nginx:alpine
         container_name: nginx_sample
         ports:
@@ -22,7 +22,7 @@ services:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_USER: user29
             MYSQL_PASSWORD: user29
-            TZ: 'Asia/Tokyo'
+            TZ: "Asia/Tokyo"
         command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
         volumes:
             - dbdata:/var/lib/mysql

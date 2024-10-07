@@ -16,6 +16,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
+                lexend: ['"Lexend Deca"', "sans-serif"], // Add Lexend Deca font
                 sans: [
                     "Be Vietnam Pro",
                     "Figtree",
@@ -24,14 +25,14 @@ module.exports = {
             },
             colors: {
                 "custom-gray": "#666666",
-                "brightRed": "hsl(12, 88%, 59%)",
-                "brightRedLight": "hsl(12, 88%, 69%)",
-                "brightRedSupLight": "hsl(12, 88%, 95%)",
-                "darkBlue": "hsl(228, 39%, 23%)",
-                "darkGrayishBlue": "hsl(227, 12%, 61%)",
-                "veryDarkBlue": "hsl(233, 12%, 13%)",
-                "veryPaleRed": "hsl(13, 100%, 96%)",
-                "veryLightGray": "hsl(0, 0%, 98%)",
+                brightRed: "hsl(12, 88%, 59%)",
+                brightRedLight: "hsl(12, 88%, 69%)",
+                brightRedSupLight: "hsl(12, 88%, 95%)",
+                darkBlue: "hsl(228, 39%, 23%)",
+                darkGrayishBlue: "hsl(227, 12%, 61%)",
+                veryDarkBlue: "hsl(233, 12%, 13%)",
+                veryPaleRed: "hsl(13, 100%, 96%)",
+                veryLightGray: "hsl(0, 0%, 98%)",
             },
             keyframes: {
                 "accordion-down": {
@@ -42,6 +43,12 @@ module.exports = {
                     from: { height: "var(--radix-accordion-content-height)" },
                     to: { height: 0 },
                 },
+            },
+            margin: {
+                31: "31px",
+            },
+            fontSize: {
+                14: "14px", // Thêm giá trị font-size 14px
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
