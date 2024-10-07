@@ -26,7 +26,7 @@
 
         <!-- Navbar -->
         <ul
-            class="bg-white flex flex-col fixed top-20 z-50 p-6 w-full h-screen text-2xl gap-4 lg:relative lg:gap-3 lg:mt-7 lg:text-black lg:text-sm lg:top-0 lg:p-0"
+            class="bg-white flex flex-col fixed top-20 z-50 p-6 w-full h-screen text-2xl gap-4 lg:relative lg:gap-3 lg:mt-7 lg:text-black lg:text-sm lg:top-0 lg:p-0 overflow-y-auto max-h-[90%]"
             :class="{ 'hidden lg:flex': !isSideBerVisible }"
         >
             <!-- Section 1 -->
@@ -38,7 +38,7 @@
                 <img
                     :src="item.icon"
                     alt="nav-icon"
-                    class="nav-icons object-contain mr-5"
+                    class="nav-icons object-contain mr-5 cursor-pointer"
                 />
                 <div
                     class="nav-content text-black cursor-pointer"
@@ -52,7 +52,7 @@
                 <img
                     src="/assets/img/icons/times.png"
                     alt="times-icons"
-                    class="object-contain mr-5"
+                    class="object-contain mr-5 cursor-pointer"
                 />
                 <div
                     class="nav-content text-black cursor-pointer"
@@ -71,7 +71,7 @@
                 <img
                     :src="item.icon"
                     alt="nav-icon"
-                    class="nav-icons object-contain mr-5"
+                    class="nav-icons cursor-pointer object-contain mr-5"
                 />
                 <div
                     class="nav-content text-black cursor-pointer"
